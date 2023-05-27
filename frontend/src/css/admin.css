@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #E4E4E4;
+    --blue-color: #8685EF;
+    --light-color: #FAF8FF;
+    --green-color:#7FD1AE;
+}
+
+
+.admin-main-container{
+    background-color: var(--blue-color);
+    background-image: linear-gradient(#4240a2,#8685EF ,rgb(112, 206, 109) );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.admin-wrapper{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.admin-menu{
+    padding: 1em;
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: 96%;
+    background-color: #E4E4E4;
+}
+.main-admin-shop-container{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+    height: 100%;
+ 
+}
+.add-shop-heading-div{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+.main-shopcontainer-div{
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #6e1dbd, #661cc9, #591cd5, #471ee1, #2521ee);
+}
+.main-admin-profile{
+    width: 25%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    gap: 1.4em;
+    max-height: 100vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    align-items: center;
+}
+.profile-name{
+    font-size: 1.8em;
+}
+.total-visitor-counts{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #EFD4BA;
+    box-shadow: 0px 0px 3px 3px rgb(187, 187, 187);
+}
+.total-visitor-counts > div > h1{
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+.circle-percentage{
+    width: 5em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    
+    border: 4px rgb(62, 62, 62) solid;
+
+}
+.total-shop-counts{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #ABCDAB;
+    box-shadow: 0px 0px 3px 3px rgb(187, 187, 187);
+}
+.total-shop-counts> div > h1{
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+.total-products-counts> div > h1{
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+.total-products-counts{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #b8dfed;
+    box-shadow: 0px 0px 3px 3px rgb(187, 187, 187);
+}
+.add-shop-heading{
+    font-size: 3em;
+    font-weight: 400;
+    color: white;
+}
+.add-shop-heading>span{
+    color: var(--green-color);
+}
+.user-shops{
+    padding: 1em;
+    border-radius: 20px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    
+    background-color: #E4E4E4;
+    transition: transform 0.3s ease;
+}
+.user-shops:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+.visitor-count>h1{
+    font-size: 1.5em;
+    font-weight: 400;
+   
+}
+.visitor-count{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.product-count{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.visitor-icon{
+    background-image: url("../utils/img/visitor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+.product-icon{
+    background-image: url("../utils/img/product.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+.product-count>h1{
+    font-size: 1.5em;
+    font-weight: 400;
+   
+}
+.count-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 10em;
+    background-color: #7FD1AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
+.user-shop-div{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.admin-name{
+    font-size: 1.8em;
+    
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #7FD1AE;
+    background-image: url("../utils/img/user.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.shop-option{
+    width: 100%;
+    box-shadow: 0px 0px 4px 2px rgb(206, 206, 206);
+    padding: 1em;
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 1em;
+    
+
+}
+.shop-option:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2px rgb(182, 182, 182);
+}
+.shop-option > h1{
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.menu-home-icon{
+    background-image: url("../utils/img/home.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    background-size: contain;
+    height: 25px;
+}
+.menu-store-icon{
+    background-image: url("../utils/img/store.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    background-size: contain;
+    height: 25px;
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.add-shop-btn-admin{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0,0);
+    border: 0.13em var(--green-color) solid;
+    font-size: 1.7em;
+    font-weight: 500;
+    position: relative;
+  
+    padding: 1.2em;
+    color: #94f2c9;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+.add-shop-btn-admin > p{
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 1em;
+}
+.add-shop-btn-admin::before{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--green-color);
+    left: -100%;
+    position: absolute;
+    transition: left 0.5s ease
+}
+
+.add-shop-btn-admin:hover.add-shop-btn-admin::before{
+    left: 0%;
+    
+}
+.add-shop-btn-admin:hover{
+    color: white;
+    cursor: pointer;
+    
+}
+.shop-icon{
+    background-image: url("../utils/img/shops.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+}
+.shop-name{
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+
+.vertical-line{
+    height: 100px;
+    width: 1px;
+    content: "";
+    background-color: black;
+}
+.delete-btn{
+    background-image: url("../utils/img/delete.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2em;
+    height: 2em;
+    transition: transform 0.3s ease;
+}
+.delete-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.shop-description-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+

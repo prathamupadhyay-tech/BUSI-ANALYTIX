@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #E4E4E4;
+    --blue-color: #8685EF;
+    --light-color: #FAF8FF;
+    --green-color:#7fd1ae;
+}
+
+
+.index-main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-getStarted-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    background-color:#4240a2;
+}
+.index-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-color);
+}
+
+.profile-container{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.profile-picture{
+    position: relative;
+    width:300px;
+
+    height: 300px;
+    border-radius: 200px;
+    background-color: var(--main-color);
+
+}
+.profile-description{
+    width: 100%;
+    height: 60%;
+    /* background-color: var(--main-color); */
+    background-color: #8685EF;
+    border-radius: 2em;
+
+}
+.main-shop-container{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center ;
+    gap: 5em;
+    align-items: center;
+    flex-direction: column;
+}
+.shop-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.shop-heading > p{
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+
+}
+.shop-heading > h1{
+    font-size: 4em;
+    font-weight: 500;
+    color: var(--green-color);
+
+}
+.shop-options-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.shop{
+    background-color: #7FD1AE;
+    width: 350px;
+    border-radius: 2em;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    gap: 0.5em;
+    position: relative;
+    bottom: 0%;
+    height: 400px;
+    transition: bottom 0.5s ease;
+}
+.shop:hover{
+    bottom: 4%;
+    cursor: pointer;
+}
+.shop:hover>.shop-shadow{
+    margin-bottom: -4%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.shop-shadow{
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(10px);
+    margin-bottom: 0%;
+    transition:  margin-bottom 0.5s ease , background-color 0.5s ease;
+    z-index: 1;
+}
+/* .shop::before{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 1;
+} */
+.shop>h1{
+    font-size: 1.5em;
+}
+.shop>p{
+    font-size: 0.9em;
+}
+.shop-img{
+   
+    width: 100px;
+    height: 100px;
+}
+.shopify-img{
+    background-image: url("../utils/img/shopify.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.wordpress-img{
+    background-image: url("../utils/img/wordpress.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.magento-img{
+    background-image: url("../utils/img/magento.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.add-shop-btn{
+    width: 40%;
+    height: 40px;
+    background-color: #8685EF;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.bottom-dots{
+    display: flex;
+
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 2em;
+    background-color: #7FD1AE;
+}
+.cross-btn-div{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cross-btn-div div:hover{
+    cursor: pointer;
+}
+.cross-1{
+    width: 70px;
+    height: 5px;
+    transform: rotateZ(45deg);
+    background-color: white;
+}
+.cross-2{
+    width: 70px;
+    height: 5px;
+    transform: rotateZ(-45deg);
+    background-color: white;
+}
